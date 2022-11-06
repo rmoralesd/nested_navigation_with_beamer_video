@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nested_navigation_with_beamer_video/details_screen.dart';
 import 'package:nested_navigation_with_beamer_video/root_screen.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const RootScreen(
+        home: DetailsScreen(
           label: 'A',
         ));
   }
