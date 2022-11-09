@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DetailsScreen extends StatefulWidget {
-  DetailsScreen({Key? key, required this.label}) : super(key: key);
+  const DetailsScreen({Key? key, required this.label}) : super(key: key);
 
   final String label;
 
