@@ -16,8 +16,9 @@ class ALocation extends BeamLocation<BeamState> {
       if (state.uri.pathSegments.length == 2)
         const BeamPage(
             child: DetailsScreen(
-          label: 'A',
-        ))
+              label: 'A',
+            ),
+            type: BeamPageType.fadeTransition)
     ];
   }
 
@@ -38,8 +39,9 @@ class BLocation extends BeamLocation<BeamState> {
       if (state.uri.pathSegments.length == 2)
         const BeamPage(
             child: DetailsScreen(
-          label: 'B',
-        ))
+              label: 'B',
+            ),
+            type: BeamPageType.noTransition)
     ];
   }
 
