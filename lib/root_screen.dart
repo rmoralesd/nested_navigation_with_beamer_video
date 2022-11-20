@@ -1,9 +1,13 @@
+import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 
 class RootScreen extends StatelessWidget {
   final String label;
 
-  const RootScreen({Key? key, required this.label}) : super(key: key);
+  final String detailsPath;
+
+  const RootScreen({Key? key, required this.label, required this.detailsPath})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +21,9 @@ class RootScreen extends StatelessWidget {
               'Screen $label',
               style: Theme.of(context).textTheme.titleLarge,
             ),
-            TextButton(onPressed: () {}, child: const Text('View details'))
+            TextButton(
+                onPressed: () => Beamer.of(context).beamToNamed(detailsPath),
+                child: const Text('View details'))
           ],
         ),
       ),

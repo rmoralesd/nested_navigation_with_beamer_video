@@ -1,4 +1,6 @@
+import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
+import 'package:nested_navigation_with_beamer_video/a_location.dart';
 
 class ScaffoldWithBottomNavBar extends StatefulWidget {
   const ScaffoldWithBottomNavBar({Key? key}) : super(key: key);
@@ -9,10 +11,28 @@ class ScaffoldWithBottomNavBar extends StatefulWidget {
 }
 
 class _ScaffoldWithBottomNavBarState extends State<ScaffoldWithBottomNavBar> {
+  final _routerDelegates = [
+    BeamerDelegate(
+      initialPath: '/a',
+      locationBuilder: (routerInformation, beamParameters) {
+        if (routerInformation.location!.contains('/a')) {
+          return ALocation(routerInformation);
+        }
+        return NotFound(path: routerInformation.location!);
+      },
+    )
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const Center(child: Text('Under build')),
+      body: IndexedStack(
+        index: 0,
+        children: [
+          Beamer(
+            routerDelegate: _routerDelegates[0],
+          )
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 0,
         items: const [
