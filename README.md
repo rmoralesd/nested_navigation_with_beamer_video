@@ -1,16 +1,13 @@
-# nested_navigation_with_beamer_video
+# Nested Navigation in Flutter using Beamer.
 
-A new Flutter project.
+Este repositorio se creó con el video tutorial [Flutter - Nested navigation usando Beamer.](https://youtu.be/MmtH-qMJ4sY), donde se explora la implementación de navegación en Flutter usando Beamer
 
-## Getting Started
+El artículo y repositorio originales, fueron publicados por Andrea Bizzotto @bizz84. Lo puedes encontrar en este enlace: [Flutter Bottom Navigation Bar with Nested Routes: GoRouter vs Beamer Comparison](https://codewithandrea.com/articles/flutter-bottom-navigation-bar-nested-routes-gorouter-beamer/)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+This repository was created with the video tutorial [Flutter - Nested navigation usando Beamer.](https://youtu.be/MmtH-qMJ4sY), where the implementation of navigation in Flutter, using Beamer, is showed.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The original article and repository were publishied by Andrea Bizzotto @biz84. You cand find them in this link: [Flutter Bottom Navigation Bar with Nested Routes: GoRouter vs Beamer Comparison](https://codewithandrea.com/articles/flutter-bottom-navigation-bar-nested-routes-gorouter-beamer/)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![nestedNavigationBeamerShowCase_221128](https://user-images.githubusercontent.com/9957133/204274926-71cdb027-c05b-447e-bbd5-9f773dbf2215.gif)
